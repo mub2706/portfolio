@@ -1,1 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set the character encoding to UTF-8 for proper text rendering -->
+    <meta charset="UTF-8" />
+    <!-- Configure the viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <!-- Set the title of the webpage that appears in the browser tab -->
+    <title>Mubarak Hassan's Portfolio </title>
+    <!-- Link the external CSS stylesheet for styling -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
 
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
+/* Resetting default styles for all elements */
+* {
+  box-sizing: border-box; /* Box model property for accurate sizing */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Styling for the navigation bar */
+nav {
+  height: 80px;
+  background: black; /* Background color for the navigation bar */
+  display: flex; /* Use flexbox for layout */
+  font-size: 1.3rem; /* Set font size for navigation text */
+  justify-content: space-between; /* Space elements evenly horizontally */
+  align-items: center; /* Center elements vertically */
+  padding: 0rem calc((100vw - 1300px) / 2); /* Horizontal padding calculation for responsiveness */
+}
+
+/* Styling for the logo within the navigation bar */
+.logo {
+  color: white; /* Text color for the logo */
+  font-size: 1.7rem; /* Font size for the logo */
+  font-weight: bold; /* Bold font weight */
+  font-style: italic; /* Italic font style */
+  padding: 0 2rem; /* Padding around the logo */
+}
+
+/* Styling for navigation links within the navigation bar */
+nav a {
+  font-size: 1.3rem; /* Font size for navigation links */
+  text-decoration: none; /* Remove underlines from links */
+  color: white; /* Text color for links */
+  padding: 0 1.3rem; /* Spacing around links */
+}
+
+/* Styling for the portfolio container */
+.portfolio {
+  background: lightgray; /* Background color for the portfolio container */
+}
+
+/* Styling for the portfolio container, using grid layout */
+.portfolio-container {
+  display: grid; /* Use grid layout for the container */
+  grid-template-columns: 1fr 1fr; /* Divide container into two columns */
+  height: 95vh; /* Set the height of the container to 95% of the viewport height */
+  padding: 3rem calc((100vw - 1300px) / 2); /* Horizontal padding calculation for responsiveness */
+  text-align: center; /* Center-align content in the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Styling for the left column in the portfolio container */
+.column-left {
+  display: flex; /* Use flex layout for the left column */
+  flex-direction: column; /* Display its contents in a column */
+  justify-content: center; /* Center content vertically */
+  align-items: flex-start; /* Align content to the left */
+  color: black; /* Text color for content */
+  padding: 0rem 2rem; /* Spacing around content */
+}
+
+/* Styling for the h1 element within the left column */
+.column-left h1 {
+  margin-bottom: 1rem; /* Spacing below the heading */
+  font-size: 3.3rem; /* Font size for the heading */
+}
+
+/* Styling for paragraphs within the left column */
+.column-left p {
+  margin-bottom: 2rem; /* Spacing below paragraphs */
+  font-size: 1.3rem; /* Font size for paragraphs */
+  line-height: 1.5; /* Line height for paragraphs */
+}
+
+/* Styling for the right column in the portfolio container */
+.column-right {
+  display: flex; /* Use flex layout for the right column */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  padding: 0rem 2rem; /* Spacing around content */
+}
+
+/* Styling for the personal image */
+.personal-image {
+  width: 80%; /* Set the width to 80% of its container */
+  height: 50%; /* Set the height to 50% of its container */
+}
+
+/* Media query for responsive design when screen width is 800px or less */
+@media screen and (max-width: 800px) {
+  .portfolio-container {
+    grid-template-columns: 1fr; /* Change to a single column layout for smaller screens */
+  }
+}
+
+</style>
+
+</head>
+<body>
+    <!-- Create a navigation section -->
+    <nav>
+        <!-- Define a div with the class "logo" for the game's logo -->
+        <div class="logo">MH.</div>
+        <!-- Define a div with the class "nav-items" for navigation links -->
+        <div class="nav-items">
+            <!-- Create links for "Game Rules," "About," and "Contact" -->
+            <a href="aboutme.html">About Me.</a>
+            <a href="projects.html">Projects.</a> 
+            <a href="contacts.html">Contact.</a>
+        </div>
+    </nav>
+    <!-- Create a section with the class "portfolio" for the portfolio content -->
+    <section class="portfolio">
+        <!-- Create a container for the portfolio content -->
+        <div class="portfolio-container">
+            <!-- Create a left column for information -->
+            <div class="column-left">
+            <!-- Display a heading for the portfolio -->
+            <h1>Welcome to My Official Portfolio!</h1>
+            
+            <!-- Create a link to "play.html" and wrap it in a button element -->
+            <a href="portfolio.html">
+            </a>
+        </div>
+        <!-- Create a right column for the money animation -->
+        <div class="column-right">
+            <!-- Display an image for the money animation with alt text and a class for styling -->
+            <img src="./money.gif" alt="illustration" class="personal-image" 
+            />
+        </div>
+        </div>
+    </section>
+</body>
+</html>
